@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Property Buttons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    /* Cursor Button */
+    .cursor-btn {
+      background-color: #0077cc;
+    }
+
+    .cursor-btn:hover {
+      cursor: crosshair;
+    }
+
+    /* Opacity Button */
+    .opacity-btn {
+      background-color: #28a745;
+    }
+
+    .opacity-btn:hover {
+      opacity: 0.5;
+    }
+
+    /* Filter Button */
+    .filter-btn {
+      background-color: #ff9800;
+    }
+
+    .filter-btn:hover {
+      filter: brightness(150%) saturate(200%);
+    }
+
+    /* Clip-Path Button */
+    .clip-btn {
+      background-color: #e91e63;
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    .clip-btn:hover {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Property Demo Buttons</h1>
+  <div class="button-container">
+    <button class="cursor-btn">Cursor</button>
+    <button class="opacity-btn">Opacity</button>
+    <button class="filter-btn">Filter</button>
+    <button class="clip-btn">Clip-Path</button>
+  </div>
+</body>
+</html>
